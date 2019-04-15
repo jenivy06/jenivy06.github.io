@@ -37,13 +37,26 @@
           </box>
     <div class="row">
       <div class="col-md-3">
-        <img src="assets/images/Jennyprofilepic.jpg" class="img-fluid" alt="Jenny Ivy">
+        <img class = "profileImage" src="assets/images/Jennyprofilepic.jpg" class="img-fluid" alt="Jenny Ivy">
       </div>
-      <div class="col-md-9">
+      <div class="col-md-6">
        <p class="bodycopy">I am a digital media enthusiast, tech geek, writer, editor and seasoned journalist who has been telling stories and creating web projects for more than 10 years.</p>
     
       <p class="bodycopy">I'm also a Colorado native and proud of it! When I'm not cuddling with my cat, you can find me out fishing, camping, kayaking, checking out movies, or zoned into web coding. Check out my writing clips at <a href="http://www.jennyivy.com">jennyivy.com</a>.</p>
   </div>
+  <div class="col-md-3">
+        <div class="card">
+                <div class="card-header">
+                        <strong>Connect with me!</strong>
+                </div>
+                <div class="card-body bodycopycard">
+                    View my work experience & web dev projects:
+                  <p class="card-text"></p>
+                  <a href="https://www.linkedin.com/in/jenny-ivy-1069264/" target="_blank" class="btn btn-primary buttons">LinkedIn</a><br><br>
+                  <a href="https://github.com/jenivy06" target="_blank" class="btn btn-primary buttons">GitHub</a>
+                </div>
+              </div>
+   </div>
   <br>
   <br>
   <br>
@@ -67,12 +80,20 @@
 
 </footer>
 <style>
+.profileImage {
+    box-shadow: 7px 7px #4aaaa5;
+}
+
+.buttons {
+    background-color: #4aaaa5;
+}
+
     #logo {
         background-color: #4aaaa5;
         width: 275px;
         height: 105px;
         padding: 30px;
-        margin-left: 183px;
+        margin-left: 140px;
         float: left;
         text-align: center;
         color: white;
@@ -88,9 +109,21 @@
         line-height: auto;
         overflow: auto;
         margin: auto;
-        text-indent: 20px;
+        text-indent: 5px;
         padding: 20px;
         margin-bottom: -20px;
+        right: 100px;
+        
+    }
+
+    .bodycopycard {
+        float: right;
+        color: #777777;
+        font-family: Arial, Helvetica, sans-serif;
+        top: 20px;
+        line-height: auto;
+        overflow: auto;
+        margin: auto;
         
     }
     .pointer {
@@ -103,7 +136,7 @@
     
     .wrapperindex {
         width: 960px;
-        height: 400px;
+        height: 450px;
         background-color: #ffffff;
         margin-bottom: 100px;
         padding: 20px;
