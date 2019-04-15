@@ -4,6 +4,8 @@
 <head>
     <title>Jenny Ivy | Portfolio</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/portfolio.js"></script>
 
 <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -38,22 +40,17 @@
     <div class="row">
       <div class="col-md-3">
             <div class="portfoliobox1 pointer">
-                    <img src="assets/images/crystal.png" class="img-fluid" alt="Crystal Collector Game" height="200px" width="200px" href="https://jenivy06.github.io/unit-4-game">
+                    <img id = "crystalbutton" onclick="newpageCrystals()" src="assets/images/crystal.png" class="img-fluid" alt="Crystal Collector Game" height="200px" width="200px" >
                 </div>
       </div>
       <div class="col-md-3">
             <div class="portfoliobox1 pointer">
-                <img src="assets/images/psychic.png" class="img-fluid" alt="Psychic game" height="200px" width="200px" href="psychic.html">
+                <img id = "psychicbutton" onclick="newpagePsychic()" src="assets/images/psychic.png" class="img-fluid" alt="Psychic game" height="200px" width="200px">
                 </div>
       </div>
         <div class="col-md-3">
-    </div>
-    </div>
-    <br>
-    <div class="row">
-        <div class="col-md-3">
                 <div class="portfoliobox1 pointer">
-                    <img src="assets/images/Hangman.png" class="img-fluid" alt="Hangman Game" height="200px" width="200px" href="#">
+                    <img id = "triviabutton" onclick="newpageTrivia()" src="assets/images/Trivia.png" class="img-fluid" alt="Trivia Game" height="200px" width="200px">
                     </div>
         </div>
         <div class="col-md-3">
@@ -94,6 +91,16 @@
 
 </footer>
 <style>
+    #triviabutton {
+
+    }
+    #crystalbutton {
+
+    }
+
+    #psychicbutton {
+
+    }
     #logo {
         background-color: #4aaaa5;
         width: 275px;
