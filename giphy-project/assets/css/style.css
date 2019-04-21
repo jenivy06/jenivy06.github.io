@@ -1,0 +1,44 @@
+#headerindex {
+    width: 100%;
+    height: 200px;
+    background-color: #ffffff;
+    border-bottom: 2px solid #cccccc;
+    opacity: 0.8;
+
+}
+
+.h1index {
+    padding-left: 45px;
+    padding-top: 30px;
+}
+
+.wrapperindex {
+    width: 100px;
+    height: 5000px;
+    background-color: #ffffff;
+    margin-bottom: 100px;
+    padding: 20px;
+    clear: both;
+    overflow: hidden;
+    border-style: solid 50px;
+    border-color: #dddddd;
+    
+    
+}
+
+#gifview {
+
+}
+
+.name-btn {
+    padding: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
+    
+
+.name {
+
+}
+.gif{
+    
+}
