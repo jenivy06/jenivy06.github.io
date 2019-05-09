@@ -30,7 +30,7 @@ $(document).ready(function () {
                       // Creating and storing an image tag
                       var gifImage = $("<img>");
                       // Setting the src attribute of the image to a property pulled off the result item
-                      gifImage.attr("src", results[i].images.fixed_height_still.url);
+                      gifImage.attr("src", results[i].images.fixed_height.url);
                       // Appending the paragraph and image tag to the gifDiv
                       gifDiv.append(p);
                       gifDiv.append(gifImage);
@@ -75,9 +75,9 @@ $(document).ready(function () {
   // Calling the renderButtons function to display the intial buttons
   renderButtons();
   // animate gifs
-  $(".gif").on("click", function () {
+  $(".gif").on("click", function(event) {
       for (i = 0; i < names.length; i++) {
-          var name = names[i];
+          var name = names[index];
       }
       var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
           name + "&api_key=EeLVOUPGYR0IFcYTnM4KxPnPy4CEKtkr&limit=10";
@@ -97,9 +97,9 @@ $(document).ready(function () {
                   gifDiv.append(gifImage);
                   $("#gif-view").prepend(gifDiv);
                   //then pause gifs
-                  gifImage.on("click", function () {
+                  gifImage.on("click", function (event) {
                       for (i = 0; i < names.length; i++) {
-                          var name = names[i];
+                          var name = names[index];
                       }
                       var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
                           name + "&api_key=EeLVOUPGYR0IFcYTnM4KxPnPy4CEKtkr&limit=10";
