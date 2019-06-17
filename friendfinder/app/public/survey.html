@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Back to the Future Buddy Survey</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+<div class="section" id="landing">
+        <h5 id="mainText" class="center"></h5>
+        <h1 style="color: black;"  class="center">
+            <img src="https://i.pinimg.com/originals/69/39/76/693976f75ab03c8e298ceb1195b6fc40.png" height="100" width="200">
+            BUDDY SURVEY<b> 
+            <br>
+            
+        </h1>
+        <h5 id="mainText" class="center">Welcome to the Back to the Future Buddy Survey! Answer the questions below. They're ranked 1 to 5; answer 1 if you strongly disagree and 5 if you agree completely. Your answers will set you up with your ideal time-travel friend!</h5>
+        <br>
+        <br>
+        <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s12">
+                    <h6>Name (Required)</h6>
+                    
+                    <input type="text" class="form-control" placeholder="Your Name Here" id="userName">
+                </div>
+            <div>
+                <div class="col s12">
+                    <h6>Link to Photo Image (Required)</h6>
+                    <input type="text" class="form-control" placeholder="Photo Link Here" id="userPhoto">
+                  </div>
+                  <h6><b>Question 1: While time traveling, you don't mind using your knowledge of the past to make a little money. </h6></b>
+<br>
+
+                  <button class="btn waves-effect waves-light" type="button" id="q1b1" value="1">1 (not me)</button>
+                  <button class="btn waves-effect waves-light" type="button"  id="q1b2" value="2">2</button>
+                  <button class="btn waves-effect waves-light"  type="button" id="q1b3" value="3">3 (possibly)</button>
+                  <button class="btn waves-effect waves-light" type="button"  id="q1b4" value="4">4 </button>
+                  <button class="btn waves-effect waves-light" type="button"  id="q1b5" value="5">5 (Great Scott! that's me!)</button>
+
+                  <br>
+                  <br>
+                  <h6><b>Question 2: If you were to go back in time, you'd be curious to see what your parents and/or grandparents look like.  </h6></b>
+
+<br>
+                  <button class="btn waves-effect waves-light" type="button" id="q2b1" value="1">1 (not me)</button>
+                  <button class="btn waves-effect waves-light" type="button"  id="q2b2" value="2">2</button>
+                  <button class="btn waves-effect waves-light"  type="button" id="q2b3" value="3">3 (possibly)</button>
+                  <button class="btn waves-effect waves-light" type="button"  id="q2b4" value="4">4 </button>
+                  <button class="btn waves-effect waves-light" type="button"  id="q2b5" value="5">5 (Great Scott! that's me!)</button>
+                  <br>
+                  <br>
+                  <h6><b>Question 3: While going to the past, your main priority would be to prevent a major tragedy.  </h6></b>
+
+<br>
+                  <button class="btn waves-effect waves-light" type="button" id="q3b1" value="1">1 (not me)</button>
+                  <button class="btn waves-effect waves-light" type="button"  id="q3b2" value="2">2</button>
+                  <button class="btn waves-effect waves-light"  type="button" id="q3b3" value="3">3 (possibly)</button>
+                  <button class="btn waves-effect waves-light" type="button"  id="q3b4" value="4">4 </button>
+                  <button class="btn waves-effect waves-light" type="button"  id="q3b5" value="5">5 (Great Scott! that's me!)</button>
+
+                  <br>
+                  <br>
+                  <h6><b>Question 4: You're basic rule of thumb while time-traveling: don't touch anything.  </h6></b>
+
+<br>
+                  <button class="btn waves-effect waves-light" type="button" id="q4b1" value="1">1 (not me)</button>
+                  <button class="btn waves-effect waves-light" type="button"  id="q4b2" value="2">2</button>
+                  <button class="btn waves-effect waves-light"  type="button" id="q4b3" value="3">3 (possibly)</button>
+                  <button class="btn waves-effect waves-light" type="button"  id="q4b4" value="4">4 </button>
+                  <button class="btn waves-effect waves-light" type="button"  id="q4b5" value="5">5 (Great Scott! that's me!)</button>
+
+                  <br>
+                  <br>
+                  <h6><b>Question 5: You're mostly into time-traveling for the science of it. You don't care about changing history. </h6></b>
+
+<br>
+                  <button class="btn waves-effect waves-light" type="button" id="q5b1" value="1">1 (not me)</button>
+                  <button class="btn waves-effect waves-light" type="button"  id="q5b2" value="2">2</button>
+                  <button class="btn waves-effect waves-light"  type="button" id="q5b3" value="3">3 (possibly)</button>
+                  <button class="btn waves-effect waves-light" type="button"  id="q5b4" value="4">4 </button>
+                  <button class="btn waves-effect waves-light" type="button"  id="q5b5" value="5">5 (Great Scott! that's me!)</button>
+
+                  <br>
+                  <br>
+                  <h6><b>Question 6: You'd be open to falling in love with someone from a different time period. </h6></b>
+
+<br>
+                  <button class="btn waves-effect waves-light" type="button" id="q6b1" value="1">1 (not me)</button>
+                  <button class="btn waves-effect waves-light" type="button"  id="q6b2" value="2">2</button>
+                  <button class="btn waves-effect waves-light"  type="button" id="q6b3" value="3">3 (possibly)</button>
+                  <button class="btn waves-effect waves-light" type="button"  id="q6b4" value="4">4 </button>
+                  <button class="btn waves-effect waves-light" type="button"  id="q6b5" value="5">5 (Great Scott! that's me!)</button>
+
+                  <br>
+                  <br>
+                  <h6><b>Question 7: You'd prefer to go to the future more than the past. </h6></b>
+
+<br>
+                  <button class="btn waves-effect waves-light" type="button" id="q7b1" value="1">1 (not me)</button>
+                  <button class="btn waves-effect waves-light" type="button"  id="q7b2" value="2">2</button>
+                  <button class="btn waves-effect waves-light"  type="button" id="q7b3" value="3">3 (possibly)</button>
+                  <button class="btn waves-effect waves-light" type="button"  id="q7b4" value="4">4 </button>
+                  <button class="btn waves-effect waves-light" type="button"  id="q7b5" value="5">5 (Great Scott! that's me!)</button>
+
+                  <br>
+                  <br>
+                  <h6><b>Question 8: You'd prefer to go to the past more than the future.</h6></b>
+
+<br>
+                  <button class="btn waves-effect waves-light" type="button" id="q8b1" value="1">1 (not me)</button>
+                  <button class="btn waves-effect waves-light" type="button"  id="q8b2" value="2">2</button>
+                  <button class="btn waves-effect waves-light"  type="button" id="q8b3" value="3">3 (possibly)</button>
+                  <button class="btn waves-effect waves-light" type="button"  id="q8b4" value="4">4 </button>
+                  <button class="btn waves-effect waves-light" type="button"  id="q8b5" value="5">5 (Great Scott! that's me!)</button>
+
+                  <br>
+                  <br>
+                  <h6><b>Question 9: You'd find it enjoyable to introduce new technologies to people in the past.</h6></b>
+
+<br>
+                  <button class="btn waves-effect waves-light" type="button" id="q9b1" value="1">1 (not me)</button>
+                  <button class="btn waves-effect waves-light" type="button"  id="q9b2" value="2">2</button>
+                  <button class="btn waves-effect waves-light"  type="button" id="q9b3" value="3">3 (possibly)</button>
+                  <button class="btn waves-effect waves-light" type="button"  id="q9b4" value="4">4 </button>
+                  <button class="btn waves-effect waves-light" type="button"  id="q9b5" value="5">5 (Great Scott! that's me!)</button>
+
+                  <br>
+                  <br>
+                  <h6><b>Question 10:  You'd be scared to share knowledge of the future with people in the past.  </h6></b>
+
+<br>
+                  <button class="btn waves-effect waves-light" type="button" id="q10b1" value="1">1 (not me)</button>
+                  <button class="btn waves-effect waves-light" type="button"  id="q10b2" value="2">2</button>
+                  <button class="btn waves-effect waves-light"  type="button" id="q10b3" value="3">3 (possibly)</button>
+                  <button class="btn waves-effect waves-light" type="button"  id="q10b4" value="4">4 </button>
+                  <button class="btn waves-effect waves-light" type="button"  id="q10b5" value="5">5 (Great Scott! that's me!)</button>
+
+
+  <h2></h2>
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" id="submitbtn">Submit Responses</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" id = "bestFriendModal">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Here's Your Back to the Future Buddy!</h4>
+        </div>
+        <div class="modal-body">
+          <h2 id="matchName"></h2>
+          <img id="matchPic" src="">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>    
+                 
+</body>
+</html>
+<script>
+  
+$(document).ready(function() { 
+
+  $('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
+
+var userScoreQ1 = 0
+var answered = 0
+$("#q1b1").click(function(){
+    userScoreQ1++
+    answered++
+    console.log("User score Q1: " + userScoreQ1);
+    $("#q1b2").hide();
+    $("#q1b3").hide();
+    $("#q1b4").hide();
+    $("#q1b5").hide();
+  });
+
+  $("#q1b2").click(function(){
+    userScoreQ1+=2
+    answered++
+    console.log("User score Q1: " + userScoreQ1);
+    $("#q1b1").hide();
+    $("#q1b3").hide();
+    $("#q1b4").hide();
+    $("#q1b5").hide();
+  });
+
+  $("#q1b3").click(function(){
+    userScoreQ1+=3
+    answered++
+    console.log("User score Q1: " + userScoreQ1);
+    $("#q1b1").hide();
+    $("#q1b2").hide();
+    $("#q1b4").hide();
+    $("#q1b5").hide();
+  });
+
+  $("#q1b4").click(function(){
+    userScoreQ1+=4
+    answered++
+    console.log("User score Q1: " + userScoreQ1);
+    $("#q1b1").hide();
+    $("#q1b2").hide();
+    $("#q1b3").hide();
+    $("#q1b5").hide();
+  });
+
+  $("#q1b5").click(function(){
+    userScoreQ1+=5
+    answered++
+    console.log("User score Q1: " + userScoreQ1);
+    $("#q1b1").hide();
+    $("#q1b2").hide();
+    $("#q1b4").hide();
+    $("#q1b5").hide();
+  });
+
+  var userScoreQ2 = 0
+  $("#q2b1").click(function(){
+    userScoreQ2++
+    answered++
+    console.log("User score Q2: " + userScoreQ2);
+    $("#q2b2").hide();
+    $("#q2b3").hide();
+    $("#q2b4").hide();
+    $("#q2b5").hide();
+  });
+
+  var userScoreQ2 = 0
+  $("#q2b2").click(function(){
+    userScoreQ2+=2
+    answered++
+    console.log("User score Q2: " + userScoreQ2);
+    $("#q2b1").hide();
+    $("#q2b3").hide();
+    $("#q2b4").hide();
+    $("#q2b5").hide();
+  });
+
+  var userScoreQ2 = 0
+  $("#q2b3").click(function(){
+    userScoreQ2+=3
+    answered++
+    console.log("User score Q2: " + userScoreQ2);
+    $("#q2b1").hide();
+    $("#q2b2").hide();
+    $("#q2b4").hide();
+    $("#q2b5").hide();
+  });
+
+  var userScoreQ2 = 0
+  $("#q2b4").click(function(){
+    userScoreQ2+=4
+    answered++
+    console.log("User score Q2: " + userScoreQ2);
+    $("#q2b1").hide();
+    $("#q2b3").hide();
+    $("#q2b2").hide();
+    $("#q2b5").hide();
+  });
+
+  var userScoreQ2 = 0
+  $("#q2b5").click(function(){
+    userScoreQ2+=5
+    answered++
+    console.log("User score Q2: " + userScoreQ2);
+    $("#q2b1").hide();
+    $("#q2b3").hide();
+    $("#q2b4").hide();
+    $("#q2b2").hide();
+  });
+
+  var userScoreQ3 = 0
+  $("#q3b1").click(function(){
+    userScoreQ3++
+    answered++
+    console.log("User score Q3: " + userScoreQ3);
+    $("#q3b1").hide();
+    $("#q3b3").hide();
+    $("#q3b4").hide();
+    $("#q3b2").hide();
+  });
+
+  var userScoreQ3 = 0
+  $("#q3b2").click(function(){
+    userScoreQ3+=2
+    answered++
+    console.log("User score Q3: " + userScoreQ3);
+    $("#q3b1").hide();
+    $("#q3b3").hide();
+    $("#q3b4").hide();
+    $("#q3b5").hide();
+  });
+
+  var userScoreQ3 = 0
+  $("#q3b3").click(function(){
+    userScoreQ3+=3
+    answered++
+    console.log("User score Q3: " + userScoreQ3);
+    $("#q3b1").hide();
+    $("#q3b2").hide();
+    $("#q3b4").hide();
+    $("#q3b5").hide();
+  });
+
+  var userScoreQ3 = 0
+  $("#q3b4").click(function(){
+    userScoreQ3+=4
+    answered++
+    console.log("User score Q3: " + userScoreQ3);
+    $("#q3b1").hide();
+    $("#q3b2").hide();
+    $("#q3b3").hide();
+    $("#q3b5").hide();
+  });
+
+  var userScoreQ3 = 0
+  $("#q3b5").click(function(){
+    userScoreQ3+=5
+    answered++
+    console.log("User score Q3: " + userScoreQ3);
+    $("#q3b1").hide();
+    $("#q3b2").hide();
+    $("#q3b3").hide();
+    $("#q3b4").hide();
+  });
+
+  var userScoreQ4 = 0
+  $("#q4b1").click(function(){
+    userScoreQ4++
+    answered++
+    console.log("User score Q4: " + userScoreQ4);
+    $("#q4b5").hide();
+    $("#q4b3").hide();
+    $("#q4b4").hide();
+    $("#q4b2").hide();
+  });
+
+  var userScoreQ4 = 0
+  $("#q4b2").click(function(){
+    userScoreQ4+=2
+    answered++
+    console.log("User score Q4: " + userScoreQ4);
+    $("#q4b3").hide();
+    $("#q4b1").hide();
+    $("#q4b4").hide();
+    $("#q4b5").hide();
+  });
+
+  var userScoreQ4 = 0
+  $("#q4b3").click(function(){
+    userScoreQ4+=3
+    answered++
+    console.log("User score Q4: " + userScoreQ4);
+    $("#q4b1").hide();
+    $("#q4b2").hide();
+    $("#q4b4").hide();
+    $("#q4b5").hide();
+  });
+
+  var userScoreQ4 = 0
+  $("#q4b4").click(function(){
+    userScoreQ4+=4
+    answered++
+    console.log("User score Q4: " + userScoreQ4);
+    $("#q4b1").hide();
+    $("#q4b2").hide();
+    $("#q4b3").hide();
+    $("#q4b5").hide();
+  });
+
+  var userScoreQ4 = 0
+  $("#q4b5").click(function(){
+    userScoreQ4+=5
+    answered++
+    console.log("User score Q4: " + userScoreQ4);
+    $("#q4b1").hide();
+    $("#q4b2").hide();
+    $("#q4b3").hide();
+    $("#q4b4").hide();
+  });
+
+  var userScoreQ5 = 0
+  $("#q5b1").click(function(){
+    userScoreQ5++
+    answered++
+    console.log("User score Q5: " + userScoreQ5);
+    $("#q5b5").hide();
+    $("#q5b3").hide();
+    $("#q5b4").hide();
+    $("#q5b2").hide();
+  });
+
+  var userScoreQ5 = 0
+  $("#q5b2").click(function(){
+    userScoreQ5+=2
+    answered++
+    console.log("User score Q5: " + userScoreQ5);
+    $("#q5b5").hide();
+    $("#q5b3").hide();
+    $("#q5b4").hide();
+    $("#q5b1").hide();
+  });
+
+  var userScoreQ5 = 0
+  $("#q5b3").click(function(){
+    userScoreQ5+=3
+    answered++
+    console.log("User score Q5: " + userScoreQ5);
+    $("#q5b5").hide();
+    $("#q5b2").hide();
+    $("#q5b4").hide();
+    $("#q5b1").hide();
+  });
+
+  var userScoreQ5 = 0
+  $("#q5b4").click(function(){
+    userScoreQ5+=4
+    answered++
+    console.log("User score Q5: " + userScoreQ5);
+    $("#q5b5").hide();
+    $("#q5b2").hide();
+    $("#q5b3").hide();
+    $("#q5b1").hide();
+  });
+
+  var userScoreQ5 = 0
+  $("#q5b5").click(function(){
+    userScoreQ5+=5
+    answered++
+    console.log("User score Q5: " + userScoreQ5);
+    $("#q5b3").hide();
+    $("#q5b2").hide();
+    $("#q5b4").hide();
+    $("#q5b1").hide();
+  });
+
+  var userScoreQ6 = 0
+  $("#q6b1").click(function(){
+    userScoreQ6++
+    answered++
+    console.log("User score Q6: " + userScoreQ6);
+    $("#q6b5").hide();
+    $("#q6b3").hide();
+    $("#q6b4").hide();
+    $("#q6b2").hide();
+  });
+
+  var userScoreQ6 = 0
+  $("#q6b2").click(function(){
+    userScoreQ6+=2
+    answered++
+    console.log("User score Q6: " + userScoreQ6);
+    $("#q6b5").hide();
+    $("#q6b3").hide();
+    $("#q6b4").hide();
+    $("#q6b1").hide();
+  });
+
+  var userScoreQ6 = 0
+  $("#q6b3").click(function(){
+    userScoreQ6+=3
+    answered++
+    console.log("User score Q6: " + userScoreQ6);
+    $("#q6b5").hide();
+    $("#q6b2").hide();
+    $("#q6b4").hide();
+    $("#q6b1").hide();
+  });
+
+  var userScoreQ6 = 0
+  $("#q6b4").click(function(){
+    userScoreQ6+=4
+    answered++
+    console.log("User score Q6: " + userScoreQ6);
+    $("#q6b5").hide();
+    $("#q6b2").hide();
+    $("#q6b3").hide();
+    $("#q6b1").hide();
+  });
+
+  var userScoreQ6 = 0
+  $("#q6b5").click(function(){
+    userScoreQ6+=5
+    answered++
+    console.log("User score Q6: " + userScoreQ6);
+    $("#q6b4").hide();
+    $("#q6b2").hide();
+    $("#q6b3").hide();
+    $("#q6b1").hide();
+  });
+
+  var userScoreQ7 = 0
+  $("#q7b1").click(function(){
+    userScoreQ7++
+    answered++
+    console.log("User score Q7: " + userScoreQ7);
+    $("#q7b5").hide();
+    $("#q7b3").hide();
+    $("#q7b4").hide();
+    $("#q7b2").hide();
+  });
+
+  var userScoreQ7 = 0
+  $("#q7b2").click(function(){
+    userScoreQ7+=2
+    answered++
+    console.log("User score Q7: " + userScoreQ7);
+    $("#q7b5").hide();
+    $("#q7b3").hide();
+    $("#q7b4").hide();
+    $("#q7b1").hide();
+  });
+
+  var userScoreQ7 = 0
+  $("#q7b3").click(function(){
+    userScoreQ7+=3
+    answered++
+    console.log("User score Q7: " + userScoreQ7);
+    $("#q7b5").hide();
+    $("#q7b2").hide();
+    $("#q7b4").hide();
+    $("#q7b1").hide();
+  });
+
+  var userScoreQ7 = 0
+  $("#q7b4").click(function(){
+    userScoreQ7+=4
+    answered++
+    console.log("User score Q7: " + userScoreQ7);
+    $("#q7b5").hide();
+    $("#q7b2").hide();
+    $("#q7b3").hide();
+    $("#q7b1").hide();
+  });
+
+  var userScoreQ7 = 0
+  $("#q7b5").click(function(){
+    userScoreQ7+=5
+    answered++
+    console.log("User score Q7: " + userScoreQ7);
+    $("#q7b4").hide();
+    $("#q7b2").hide();
+    $("#q7b3").hide();
+    $("#q7b1").hide();
+  });
+
+  var userScoreQ8 = 0
+  $("#q8b1").click(function(){
+    userScoreQ8++
+    answered++
+    console.log("User score Q8: " + userScoreQ8);
+    $("#q8b5").hide();
+    $("#q8b3").hide();
+    $("#q8b4").hide();
+    $("#q8b2").hide();
+  });
+
+  var userScoreQ8 = 0
+  $("#q8b2").click(function(){
+    userScoreQ8+=2
+    answered++
+    console.log("User score Q8: " + userScoreQ8);
+    $("#q8b5").hide();
+    $("#q8b3").hide();
+    $("#q8b4").hide();
+    $("#q8b1").hide();
+  });
+
+  var userScoreQ8 = 0
+  $("#q8b3").click(function(){
+    userScoreQ8+=3
+    answered++
+    console.log("User score Q8: " + userScoreQ8);
+    $("#q8b5").hide();
+    $("#q8b2").hide();
+    $("#q8b4").hide();
+    $("#q8b1").hide();
+  });
+
+  var userScoreQ8 = 0
+  $("#q8b4").click(function(){
+    userScoreQ8+=4
+    answered++
+    console.log("User score Q8: " + userScoreQ8);
+    $("#q8b5").hide();
+    $("#q8b2").hide();
+    $("#q8b3").hide();
+    $("#q8b1").hide();
+  });
+
+  var userScoreQ8 = 0
+  $("#q8b5").click(function(){
+    userScoreQ8+=5
+    answered++
+    console.log("User score Q8: " + userScoreQ8);
+    $("#q8b4").hide();
+    $("#q8b2").hide();
+    $("#q8b3").hide();
+    $("#q8b1").hide();
+  });
+
+  var userScoreQ9 = 0
+  $("#q9b1").click(function(){
+    userScoreQ9++
+    answered++
+    console.log("User score Q9: " + userScoreQ9);
+    $("#q9b5").hide();
+    $("#q9b3").hide();
+    $("#q9b4").hide();
+    $("#q9b2").hide();
+  });
+
+  var userScoreQ9 = 0
+  $("#q9b2").click(function(){
+    userScoreQ9+=2
+    answered++
+    console.log("User score Q9: " + userScoreQ9);
+    $("#q9b5").hide();
+    $("#q9b3").hide();
+    $("#q9b4").hide();
+    $("#q9b1").hide();
+  });
+
+  var userScoreQ9 = 0
+  $("#q9b3").click(function(){
+    userScoreQ9+=3
+    answered++
+    console.log("User score Q9: " + userScoreQ9);
+    $("#q9b5").hide();
+    $("#q9b2").hide();
+    $("#q9b4").hide();
+    $("#q9b1").hide();
+  });
+
+  var userScoreQ9 = 0
+  $("#q9b4").click(function(){
+    userScoreQ9+=4
+    answered++
+    console.log("User score Q9: " + userScoreQ9);
+    $("#q9b5").hide();
+    $("#q9b2").hide();
+    $("#q9b3").hide();
+    $("#q9b1").hide();
+  });
+
+  var userScoreQ9 = 0
+  $("#q9b5").click(function(){
+    userScoreQ9+=5
+    answered++
+    console.log("User score Q9: " + userScoreQ9);
+    $("#q9b4").hide();
+    $("#q9b2").hide();
+    $("#q9b3").hide();
+    $("#q9b1").hide();
+  });
+
+  var userScoreQ10 = 0
+  $("#q10b1").click(function(){
+    userScoreQ10++
+    answered++
+    console.log("User score Q10: " + userScoreQ10);
+    $("#q10b5").hide();
+    $("#q10b3").hide();
+    $("#q10b4").hide();
+    $("#q10b2").hide();
+  });
+
+  var userScoreQ10 = 0
+  $("#q10b2").click(function(){
+    userScoreQ10+=2
+    answered++
+    console.log("User score Q10: " + userScoreQ10);
+    $("#q10b5").hide();
+    $("#q10b3").hide();
+    $("#q10b4").hide();
+    $("#q10b1").hide();
+  });
+
+  var userScoreQ10 = 0
+  $("#q10b3").click(function(){
+    userScoreQ10+=3
+    answered++
+    console.log("User score Q10: " + userScoreQ10);
+    $("#q10b5").hide();
+    $("#q10b2").hide();
+    $("#q10b4").hide();
+    $("#q10b1").hide();
+  });
+
+  var userScoreQ10 = 0
+  $("#q10b4").click(function(){
+    userScoreQ10+=4
+    answered++
+    console.log("User score Q10: " + userScoreQ10);
+    $("#q10b5").hide();
+    $("#q10b2").hide();
+    $("#q10b3").hide();
+    $("#q10b1").hide();
+  });
+
+  var userScoreQ10 = 0
+  $("#q10b5").click(function(){
+    userScoreQ10+=5
+    answered++
+    console.log("User score Q10: " + userScoreQ10);
+    $("#q10b4").hide();
+    $("#q10b2").hide();
+    $("#q10b3").hide();
+    $("#q10b1").hide();
+  });
+
+  $("#submitbtn").click(function(){
+    event.preventDefault();
+     // Validate all that all questions have been answered
+if (answered <= 9)    
+alert("You forgot to answer one or more questions!");
+
+else if (answered === 10) {
+var newFriend = 
+{
+name: $('#userName').val().trim(), 
+profilePic: $('#userPhoto').val().trim(),
+scores: [userScoreQ1, userScoreQ2, userScoreQ3, userScoreQ4, userScoreQ5, userScoreQ6, userScoreQ7, userScoreQ8, userScoreQ9, userScoreQ10]
+
+}
+console.log("Scores: " + scores);
+console.log("New Friend" + newFriend);
+
+}
+});
+
+var currentURL = window.location.origin;
+//AJAX posts the data to friends API.
+$.post(currentURL + "/api/friends", newFriend, function(data) {
+                //Grab the result from the AJAX post so that the best match's name and photo are displayed.
+                $("#matchName").text(data.name);
+                $("#matchPic").attr("src", data.profilePic);
+            });
+      
+})
+
+
+  
+
+ 
+
+
+
+</script>
