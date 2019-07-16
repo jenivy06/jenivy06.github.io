@@ -1,15 +1,19 @@
 .body {
-    background-color: #423d58;
+    background-color: #607d8b ;
     color: rgba(255,255,255,0.8);
 }
 
+.nametitle {
+	color: #eceff1
+}
+
 .header {
-    background-color: #423d58;
+    background-color: #607d8b ;
 }
 
 #landing{
     height: 100vh;
-    background-image: url("https://cdn.pixabay.com/photo/2015/08/11/22/43/geometric-885327_960_720.png");
+    background-image: url("https://cdn.pixabay.com/photo/2014/10/26/15/26/board-503944_960_720.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -93,9 +97,13 @@
 	position:static;
   }
 
+  .parallax-container {
+	height: 500px;
+  }
+
 #work {
-	background-color: #423d58;
-	color: #9aaca1;
+	background-color: #607d8b;
+	color: #eceff1;
 }
 
 .aboutme {
@@ -136,4 +144,12 @@
 
 .card1Align {
 	width: 30%;
+}
+
+.myprojectsTitle {
+	color: #607d8b;
+}
+
+.h3{
+	color: #9aaca1;
 }
