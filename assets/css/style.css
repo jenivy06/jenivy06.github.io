@@ -1,6 +1,22 @@
-.body {
-    background-color: #607d8b ;
-    color: rgba(255,255,255,0.8);
+a {
+	color: #263238;
+}
+
+a:link{
+	color: #607d8b;
+}
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+main {
+	flex: 1 0 auto;
+}
+
+.bodycopy {
+		background-color: #607d8b ;
+		color: rgba(255,255,255,0.8);
 }
 
 .nametitle {
@@ -19,7 +35,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     z-index: -1;
-    opacity: 0.9;
+    
 }
 #mainText{
     margin-top: 30vh;
@@ -98,11 +114,16 @@
   }
 
   .parallax-container {
-	height: 500px;
+	height: 185vh;
   }
 
 #work {
-	background-color: #607d8b;
+	background-color: #37474f;
+	color: #eceff1;
+}
+
+#cardtitlebar {
+	background-color: #37474f;
 	color: #eceff1;
 }
 
