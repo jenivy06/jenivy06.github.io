@@ -1,9 +1,9 @@
 a {
-	color: #263238;
+	color: black;
 }
 
 a:link{
-	color: #607d8b;
+	color: black;
 }
 body {
 	display: flex;
@@ -113,13 +113,17 @@ main {
 	position:static;
   }
 
-  .parallax-container {
-	height: 185vh;
-  }
+.parallax-container {
+	height: 555px;
+}
 
 #work {
 	background-color: #37474f;
 	color: #eceff1;
+}
+
+#projectsbtn {
+	background-color: #607d8b;
 }
 
 #cardtitlebar {
@@ -173,4 +177,8 @@ main {
 
 .h3{
 	color: #9aaca1;
+}
+
+.parallax-container {
+	display: flex;
 }
