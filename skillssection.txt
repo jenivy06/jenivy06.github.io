@@ -1,0 +1,14 @@
+<!--section divider-->
+
+<div class = "section blue-grey darken-1"></div>
+<!--Skills section-->
+
+<div class="parallax-container">
+        <div class="parallax">
+                <img src="assets/images/mountains.jpg">
+            </div>
+</div>
+
+<!--section divider-->
+
+<div class = "section blue-grey darken-1"></div>
