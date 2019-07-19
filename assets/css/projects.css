@@ -1,0 +1,387 @@
+a {
+	color: black;
+}
+
+a:link{
+	color: black;
+}
+body {
+	display: flex;
+	min-height: 100vh;
+    flex-direction: column;
+    background-image: url("https://cdn.pixabay.com/photo/2017/06/06/16/51/background-2377762_960_720.jpg")
+}
+main {
+	flex: 1 0 auto;
+}
+
+.bodycopy {
+		background-color: #607d8b ;
+		color: rgba(255,255,255,0.8);
+}
+
+.nametitle {
+	color: #eceff1
+}
+
+.header {
+    background-color: #607d8b ;
+}
+
+#landing{
+    height: 100vh;
+    background-image: url("https://cdn.pixabay.com/photo/2014/10/26/15/26/board-503944_960_720.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+    
+}
+
+#landingprojects{
+    height: 400vh;
+    background-image: url("https://cdn.pixabay.com/photo/2017/06/06/16/51/background-2377762_960_720.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+    
+}
+
+@-webkit-keyframes hvr-ripple-out {
+	100% {
+	  top: -12px;
+	  right: -12px;
+	  bottom: -12px;
+	  left: -12px;
+	  opacity: 0;
+	}
+  }
+  @keyframes hvr-ripple-out {
+	100% {
+	  top: -12px;
+	  right: -12px;
+	  bottom: -12px;
+	  left: -12px;
+	  opacity: 0;
+	}
+  }
+  .hvr-ripple-out {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	position: relative;
+  }
+  .hvr-ripple-out:before {
+	content: '';
+	position: absolute;
+	border: #e1e1e1 solid 6px;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+  }
+  .hvr-ripple-out:hover:before, .hvr-ripple-out:focus:before, .hvr-ripple-out:active:before {
+	-webkit-animation-name: hvr-ripple-out;
+	animation-name: hvr-ripple-out;
+  }
+  
+
+#mainText{
+    margin-top: 30vh;
+}
+
+
+.hr.style-six {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.homepagetext {
+    color: white;
+}
+
+.icon {
+	position:relative;
+	text-align:center;
+	width:0px;
+	height:0px;
+	padding:20px;
+	border-top-right-radius: 	20px;
+	border-top-left-radius: 	20px;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 	20px; 
+	-moz-border-radius: 		20px 20px 20px 20px;
+	-webkit-border-radius: 		20px 20px 20px 20px;
+	-khtml-border-radius: 		20px 20px 20px 20px; 	
+	color:#FFFFFF;
+}
+.icon i {
+	font-size:20px;
+	position:absolute;
+	left:9px;
+	top:10px;
+}
+.icon.social {
+	float:left;
+	margin:0 5px 0 0;
+	cursor:pointer;
+	background:#6d6e71 ;
+	color:#262626;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s; 	
+}
+.icon.social:hover {
+	background:#262626 ;
+	color:#6d6e71;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	-webkit-filter:	drop-shadow(0 1px 10px rgba(0,0,0,.8));
+	-moz-filter: 	drop-shadow(0 1px 10px rgba(0,0,0,.8));
+	-ms-filter: 		drop-shadow(0 1px 10px rgba(0,0,0,.8));
+	-o-filter: 		drop-shadow(0 1px 10px rgba(0,0,0,.8));
+	filter: 			drop-shadow(0 1px 10px rgba(0,0,0,.8));	 	
+}
+.icon.social.fb i {
+	left:13px;
+	top:10px;
+}
+.icon.social.tw i {
+	left:11px;
+}
+.icon.social.in i {
+	left:11px;
+}
+
+.parallax-container{
+    height: 300px;
+}
+
+#work {
+	background-color: #37474f;
+	color: #eceff1;
+}
+
+.projectsbtn {
+	background-color: #607d8b;
+}
+
+
+
+#cardtitlebar {
+	background-color: #37474f;
+	color: #eceff1;
+}
+
+.aboutme {
+	color: #9aaca1;
+}
+
+.wrapper{
+    width: 1100px;
+    height: 900px;
+    background-color: #9aaca1;
+    margin-bottom: 100px;
+    padding: 20px;
+    clear: both;
+    overflow: hidden;
+    border-style: solid 300px;
+    border-color: black;
+    
+    
+}
+
+.wrapperprojects {
+	width: 960px;
+	height: 1300px;
+	background-color: #ffffff;
+	margin: 0 auto;
+	padding: 20px;
+	clear: both;
+	overflow: hidden;
+	border-style: solid 50px;
+	border-color: #dddddd;
+  
+  }
+
+.cardtitle {
+	color: #371742;
+}
+
+.cardcopy {
+	color: #12040a;
+}
+
+.cardlink {
+	color: 	#371742;
+}
+
+.center-cols > .col {
+	
+	display: inline-block; /* make blocks inline-block */
+	
+  }
+
+.card1Align {
+	width: 30%;
+}
+
+.myprojectsTitle {
+	color: #607d8b;
+}
+
+.h3{
+	color: #9aaca1;
+}
+
+.parallax-container {
+    display: flex;
+    height: 999px;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .row > .column {
+    padding: 0 8px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .column {
+    float: left;
+    width: 25%;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .mySlides {
+    display: none;
+  }
+  
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  img {
+    margin-bottom: -4px;
+  }
+  
+  .caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  
+  img.hover-shadow {
+    transition: 0.3s;
+  }
+  
+  .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
