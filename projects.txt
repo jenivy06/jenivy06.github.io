@@ -30,7 +30,7 @@
                                     </div>
                                     <div class="card-content">
                                         <span class="card-title activator purple-text text-lighten-5 ">GifTastic! Gif Generator<i class="mdi-navigation-more-vert right"></i></span>
-                                        
+                                        c
                                         <p><a class="purple-text text-lighten-5" href="#"></a></p>
                                     </div>
                                     <div class="card-reveal">
