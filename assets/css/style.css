@@ -1,3 +1,6 @@
+body {
+	background-color: #607d8b;
+}
 .button {
     width: 250px;
     height: 50px;
@@ -33,7 +36,14 @@ main {
 }
 
 .header {
-    background-color: #607d8b ;
+	background-color: #607d8b ;
+	margin-left: 100px;
+}
+
+.contactsection {
+	background-color: #607d8b ;
+	width: 600px;
+	
 }
 
 #landing{
@@ -182,8 +192,13 @@ main {
 }
 
 #work {
-	background-color: #37474f;
-	color: #eceff1;
+	color: #37474f;
+	background-color: #eceff1;
+}
+
+.viewallprojectsBTN {
+	color: #37474f;
+	background-color: #eceff1;
 }
 
 .projectsbtn {
@@ -192,13 +207,32 @@ main {
 
 
 
+#cardtitlebarWEBDEV {
+	color: #37474f;
+	background-color: #607d8b;
+}
+
 #cardtitlebar {
+	color: #37474f;
+	background-color: #607d8b;
+}
+
+#cardtitlebarWriting {
 	background-color: #37474f;
 	color: #eceff1;
 }
 
 .aboutme {
 	color: #9aaca1;
+}
+
+
+.writingCard {
+	color: #37474f;
+}
+
+.writingcardContent {
+	background-color:  #eceff1;
 }
 
 .wrapper{
@@ -292,4 +326,13 @@ main {
 	left: 0;
 	right: 0;
   }
-  
+
+.digitalimage {
+	opacity: 0.5;
+}
+
+.skillsection {
+	height: 625px;
+	width: 600px;
+}
+
