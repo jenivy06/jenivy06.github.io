@@ -40,9 +40,13 @@ main {
 	margin-left: 100px;
 }
 
-.contactsection {
+.header {
 	background-color: #607d8b ;
-	width: 600px;
+	margin-left: 140px;
+}
+
+.contactme {
+	background-color: #607d8b ;
 	
 }
 
@@ -333,6 +337,23 @@ main {
 
 .skillsection {
 	height: 625px;
-	width: 600px;
+
 }
+
+/* unvisited link */
+a:link {
+	color: #eceff1;
+  }
+  
+  /* visited link */
+  a:visited {
+	color: #9aaca1;
+  }
+  
+  /* mouse over link */
+  a:hover {
+	color: black;
+  }
+  
+ 
 
