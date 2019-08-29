@@ -11,8 +11,8 @@
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-
-
+    <link href="https://fonts.googleapis.com/css?family=Libre+Caslon+Display|Libre+Caslon+Text|Noto+Serif|PT+Serif|Playfair+Display&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/5052251c2a.js"></script>
    
    
 
@@ -25,9 +25,11 @@
        <div class="navbar-fixed blue-grey">
                 <nav class="blue-grey">
                     <div class="container">
-                        <div class="nav-wrapper header">
-                            <a href="#" class="brand-logo"></a>
-                            <ul data-target="mobile-demo" class="sidenav-trigger navbar-fixed" id="navList">
+                        <div class="nav-wrapper">
+                                
+                                <a href="#!" class="brand-logo"></a>
+                                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                                <ul class="right hide-on-med-and-down">
                                 <li><a href="#landing">Home</a></li>
                                 <li><a href="#intro">About Me</a></li>
                                 <li><a href="#work">Web Dev Projects</a></li>
@@ -39,7 +41,28 @@
                     </div>
                 </nav>
             </div>
-            <div class="section" id="landing">
+
+            <div class="parallax-container">
+                    <div class="parallax">
+                        <img src="assets/images/bluebrownwood.jpg">
+                    </div>
+                        <div class="row">
+                            <div class="container">
+                                <div class="section">
+                                        <h1 class="nametitle center">
+                                                JENNY<b> IVY</b>
+                                                <br>
+                                                <i class="fa fa-leaf" aria-hidden="true"></i>
+                                            </h1>
+                                            
+                                </div>
+                            </div>
+                            <div class="row">
+                                    <p id="" class="center titleText">Web Developer | Editor | Writer | Digital Content Specialist </p>
+                                </div>
+                        </div>
+            </div>
+       <!--   <div class="section" id="landing">
                     <h5 id="mainText" class="center"></h5>
                     <h1 class="nametitle center">
                         JENNY<b> IVY</b>
@@ -47,7 +70,7 @@
                         <i class="fa fa-leaf" aria-hidden="true"></i>
                     </h1>
                     <h6 id="" class="center nametitle"><i>Web Developer | Editor | Writer | Digital Content Specialist</i></h6>
-            </div> 
+            </div> -->  
 <!--section divider-->
 
 <div class = "section blue-grey darken-1"></div>
@@ -75,13 +98,14 @@
                                     <img class="responsive-img circle" src="assets/images/Jennyprofilepic.jpg" alt="Jenny Ivy">
                                 </div>
                                 <dic class="col s12 m12 offset-l1 l8 aboutme">
-                                    <h5 class="center nametitle"><b>ABOUT ME</b></h5>
-                                    <p class="blue-grey nametitle">
-                                            I am a digital media enthusiast, tech geek, writer, editor and seasoned journalist who has been telling stories and creating web projects for more than 10 years. I am proficient with web technology tools, including HTML, CSS, Javascript, jQuery, Node.js and MySQL. <br><br>Scroll further to view my writing samples, video projects, and resume.</p>
-                                        <br />
-                                        <br>
-                                        <i></i> 
+                                    <h5 class="center aboutmetext"><b>ABOUT ME</b></h5>
+                                    <p class="blue-grey aboutmetext">
+                                            I am a digital media enthusiast, tech geek, writer, editor and seasoned journalist who has been telling stories and creating web projects for more than 10 years. I am proficient with web technology tools, including HTML, CSS, Javascript, jQuery, Node.js and MySQL. <br><br>Scroll further to view my web development projects, writing samples, video work, and resume.</p>
+                                        
+                                            <br />
+                                            <i class="fa fa-angle-double-down aboutmetext" style="font-size:36px"></i>
                                     </p>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -92,7 +116,7 @@
 <!--My projects section-->
                     <div id="p1" class="parallax-container">
                         <div class="parallax">
-                            <img src="assets/images/code.jpg">
+                            <img src="assets/images/codewithheart.jpg">
                         </div>
                         <!--<div class="container">-->
                             <div class="row">
@@ -230,7 +254,7 @@
           <p>Since 2007, I've written and edited articles for several trade and consumer publications. These media products target a wide range of audiences, including skiing, real estate, financial, insurance, construction, and employee benefits professionals.</p>
         </div>
         <div class="card-action">
-          <a href="#">Click to view samples.</a>
+          <a href="writingsamples.html">Click to view samples.</a>
         </div>
       </div>
     </div>
@@ -370,6 +394,7 @@
 <script>
     $(document).ready(function(){
     $('.parallax').parallax();
+    $('.sidenav').sidenav();
 });
 </script>
 
