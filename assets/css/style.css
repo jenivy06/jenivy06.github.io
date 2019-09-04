@@ -376,5 +376,15 @@ a:link {
 	color: black;
   }
   
- 
+ .cardheadline {
+	 font-size: 20px;
+	 text-decoration: underline;
+	 
+ }
+
+ .headlineactivator {
+	color: #eceff1;
+	font-size: 2px;
+	font-style: italic
+ }
 
