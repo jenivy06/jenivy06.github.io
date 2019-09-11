@@ -232,6 +232,11 @@ main {
 	color: #eceff1;
 }
 
+#cardtitlebarVideo {
+	background-color: #37474f;
+	color: #eceff1;
+}
+
 .webdevTitleBar {
 	background-color: #37474f;
 	color: #eceff1;
@@ -578,4 +583,8 @@ a:link {
 
   .projectlink {
 	  color: #607d8b 
+  }
+
+  .videocard{
+	  margin-left: -60px;
   }

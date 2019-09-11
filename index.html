@@ -34,7 +34,7 @@
                                 <li><a href="#intro">About Me</a></li>
                                 <li><a href="#work">Web Dev Projects</a></li>
                                 <li><a href="#cardtitlebarWriting">Writing Clips</a></li>
-                                <li><a href="#video">Video Work</a></li>
+                                <li><a href="#cardtitlebarVideo">Video Work</a></li>
                                 <li><a href="#contact">Contact & Resume</a></li>
                             </ul>
                         </div>
@@ -238,10 +238,54 @@
             <p>From blogs to slideshows to articles, I've been writing and producing digital content for almost a decade.</p>
           </div>
           <div class="card-action">
+            <!-- Modal Trigger -->
+  <button data-target="modal1" class="btn modal-trigger">Click to view examples</button>
+          </div>
+        </div>
+      </div>
+  </div> 
+</div>
+</div>
+</div>
+</div>
+
+<!--section divider-->
+
+<div class = "section blue-grey darken-1"></div>
+
+<!--Writing Section -->
+
+<div id="p1" class="parallax-container">
+    <div class="parallax">
+        <img src="assets/images/lensside.jpg">
+    </div>
+    <!--<div class="container">-->
+        <div class="row">
+            <!--Work-->
+<!--<div class="section"  id="work">-->
+<div class="container">
+<div class="section">
+<br>
+<br>
+<h3 class="row center" id="cardtitlebarVideo">VIDEO WORK</h3>
+<div class="row">
+        
+    <div class="col s11  push-s1">
+        <div class="card videocard">
+          <div class="card-image" id="cardtitlebar">
+            <img src="assets/images/videocropped.png" class="digitalimage">
+            <span class="card-title writingCard">Video</span>
+          </div>
+          <div class="card-content writingcardContent">
+            <p>Photography, Editing, and Interviews by Jenny Ivy</p>
+          </div>
+          <div class="card-action">
             <a href="#">Click to view samples.</a>
           </div>
         </div>
       </div>
+      
+      
   </div> 
 </div>
 </div>
@@ -359,6 +403,18 @@
           </div>
         </div>
       </footer>
+
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Links to digital content:</h4>
+      <h5> "Welcome to flatland"<a href="assets/files/welcometoflatland.pdf" target="_blank"><i>...click here to view</i></a></h5>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
                 </body>
                 </html>
 
@@ -367,6 +423,7 @@
     $(document).ready(function(){
     $('.parallax').parallax();
     $('.sidenav').sidenav();
+    $('.modal').modal();
 });
 </script>
 
