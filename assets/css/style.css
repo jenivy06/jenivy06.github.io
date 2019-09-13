@@ -199,6 +199,7 @@ main {
 
 .parallax-container {
 	height: 555px;
+	display: flex;
 }
 
 #work {
@@ -207,8 +208,8 @@ main {
 }
 
 .viewallprojectsBTN {
-	background-color: #37474f;
-	color: #eceff1;
+	color: black;
+	background-color: #eceff1;
 }
 
 .projectsbtn {
@@ -219,7 +220,8 @@ main {
 
 #cardtitlebarWEBDEV {
 	color: #37474f;
-	background-color: #607d8b;
+	background-color: #eceff1;
+	font-family: 'Source Serif Pro', serif;
 }
 
 #cardtitlebar {
@@ -230,11 +232,13 @@ main {
 #cardtitlebarWriting {
 	background-color: #37474f;
 	color: #eceff1;
+	font-family: 'Source Serif Pro', serif;
 }
 
 #cardtitlebarVideo {
-	background-color: #37474f;
-	color: #eceff1;
+	color: #37474f;
+	background-color: #eceff1;
+	font-family: 'Source Serif Pro', serif;
 }
 
 .webdevTitleBar {
@@ -316,9 +320,7 @@ main {
 	color: #9aaca1;
 }
 
-.parallax-container {
-	display: flex;
-}
+
 
 /* Underline From Center */
 .hvr-underline-from-center {
@@ -367,7 +369,7 @@ a:link {
   
   /* visited link */
   a:visited {
-	color: #9aaca1;
+	color: darkslategray
   }
   
   /* mouse over link */
@@ -427,7 +429,7 @@ a:link {
 	 margin-left: -230px
 
  }
-  .container{
+  .box{
 	-webkit-transform-style: preserve-3d;
 			transform-style: preserve-3d;
 	  -webkit-perspective: 1000px;
@@ -455,10 +457,10 @@ a:link {
   }
   
   .back{
-	background: #371742;
-	background: -webkit-linear-gradient(45deg,  #371742 0%,#596a72 100%);
-	background: -o-linear-gradient(45deg,  #371742 0%,#596a72 100%);
-	background: linear-gradient(45deg,  #371742 0%,#596a72 100%);
+	background: #9aaca1;
+	background: -webkit-linear-gradient(45deg,  #9aaca1 0%,#596a72 100%);
+	background: -o-linear-gradient(45deg,  #9aaca1 0%,#596a72 100%);
+	background: linear-gradient(45deg,  #9aaca1 0%,#596a72 100%);
   }
   
   .front:after{
@@ -476,8 +478,8 @@ a:link {
 			  backface-visibility: hidden;
 	  border-radius: 10px;
   }
-  .container:hover .front,
-  .container:hover .back{
+  .box:hover .front,
+  .box:hover .back{
 	  -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
 	  transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
 	  -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
@@ -509,28 +511,28 @@ a:link {
 	  
   }
   
-  .container .back{
+  .box .back{
 	  -webkit-transform: rotateY(180deg);
 			  transform: rotateY(180deg);
 	  -webkit-transform-style: preserve-3d;
 			  transform-style: preserve-3d;
   }
   
-  .container .front{
+  .box .front{
 	  -webkit-transform: rotateY(0deg);
 			  transform: rotateY(0deg);
 	  -webkit-transform-style: preserve-3d;
 			  transform-style: preserve-3d;
   }
   
-  .container:hover .back{
+  .box:hover .back{
 	-webkit-transform: rotateY(0deg);
 			transform: rotateY(0deg);
 	-webkit-transform-style: preserve-3d;
 			transform-style: preserve-3d;
   }
   
-  .container:hover .front{
+  .box:hover .front{
 	-webkit-transform: rotateY(-180deg);
 			transform: rotateY(-180deg);
 	-webkit-transform-style: preserve-3d;
