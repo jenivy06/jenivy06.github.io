@@ -2,6 +2,16 @@ body {
 	background-color: #607d8b;
 }
 
+.navbarText {
+	color: #C6D4DF;
+	background-color: #607d8b;
+	
+}
+
+#navbarLink { color: #C6D4DF; }
+
+#samplesLink { color: #607d8b; }
+
 #mainsection {
 	margin-top: 50px;
 }
@@ -602,4 +612,8 @@ a:link {
   .digitalcontentsubhead {
 	font-family: 'Merriweather', serif;
 	font-size: 24px;
+  }
+
+  .recommendationText {
+	font-family: 'Raleway', sans-serif;
   }

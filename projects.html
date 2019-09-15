@@ -17,23 +17,24 @@
         <script src="assets/javascript/java.js"></script>
         <script src="assets/javascript/materialize.js"></script>
         <script src="assets/javascript/materialize.min.js"></script>
-       <div class="navbar-fixed blue-grey">
-                <nav class="blue-grey">
-                    <div class="container">
-                        <div class="nav-wrapper header">
-                            <a href="#" class="brand-logo"></a>
-                            <ul class="right hide-on-med-and-down" id="navList">
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="index.html">About Me</a></li>
-                                    <li><a href="projects.html">Web Dev Projects</a></li>
-                                    <li><a href="writingsamples.html">Writing Clips</a></li>
-                                    <li><a href="video.html">Video Work</a></li>
-                                    <li><a href="#contact">Contact & Resume</a></li>
-                            </ul>
-                        </div>
+        <nav class="navbarText">
+                <div class="container">
+                    <div class="nav-wrapper">
+                            
+                            <a href="#!" class="brand-logo"></a>
+                            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons"></i></a>
+                            <ul class="right hide-on-med-and-down">
+                            <li><a id="navbarLink" href="index.html">Home</a></li>
+                            <li><a id="navbarLink" href="index.html">About Me</a></li>
+                            <li><a id="navbarLink" href="projects.html">Web Dev Projects</a></li>
+                            <li><a id="navbarLink" href="writingsamples.html">Writing Clips</a></li>
+                            <li><a id="navbarLink" href="video.html">Video Work</a></li>
+                            <li><a id="navbarLink" href="#contact">Contact & Resume</a></li>
+                            <li><a id="navbarLink" href="#recommendations">Recommendations</a></li>
+                        </ul>
                     </div>
-                </nav>
-            </div>
+                </div>
+            </nav>
 <!--begin parallax-->
  <!--           <div class="parallax-container">
                     <div class="parallax">
@@ -454,7 +455,7 @@
                              
                            <h5 class="white-text center">CONTACT ME</h5>
                            <p><i class="far fa-address-book white-text"></i></p>
-                     Feel free to reach me on <a href="www.linkedin.com/in/jenny-ivy-1069264" target="_blank">LinkedIn</a>, or email me at <a href="mailto:jennyivy@gmail.com">jennyivy@gmail.com</a>. 
+                     Feel free to reach me on <a id="navbarLink" href="www.linkedin.com/in/jenny-ivy-1069264" target="_blank">LinkedIn</a>, or email me at <a id="navbarLink" href="mailto:jennyivy@gmail.com">jennyivy@gmail.com</a>. 
                          <p class="grey-text text-lighten-4"></p>
                          
                          <br>
@@ -462,9 +463,14 @@
                            <h5 class="white-text">RESUME</h5>
                            <ul>
                                <p><i class="far fa-file white-text"></i></p>
-                             <li><a class="grey-text text-lighten-3"><a href="assets/files/Jenny_Ivy_Resume_June19.pdf" target="_blank">Click here to view my resume.</a></li>
+                             <li><a class="button hvr-underline-from-center viewallprojectsBTN" id="navbarLink" href="assets/files/Jenny_Ivy_Resume_June19.pdf" target="_blank">Click here to view my resume.</a></li>
                            </ul>
                          </div>
+                         <div class = "row center">
+                                <h5 class="white-text" id="recommendations">RECOMMENDATIONS</h5>
+                                <p><i class="fas fa-comment white-text"></i></p>
+                                <a id="navbarLink" class="button hvr-underline-from-center viewallprojectsBTN modal-trigger" href="#modal5">Click here to view recommendations.</a>
+                              </div>
                      </div>
                      </div>
                  </div>
@@ -483,11 +489,37 @@
 
                 </body>
                 </html>
-
+ <!-- Modal Structure -->
+ <div id="modal5" class="modal">
+        <div class="modal-content">
+          <h4>Recommendations</h4>
+          <p class="z-depth-5 recommendationText">"I had the pleasure of teaching Jenny at the University of Denver Full Stack Web Development Bootcamp. We learned technologies such as JavaScript, React, NodeJS, Express REST APIs, HTML, CSS, Mongo, MySQL, and more.<br><br>
+  
+                Jenny was a fantastic student. She was very organized when it came to tasks (homework, in class exercises, etc.) and projects. Her projects really shone, they were themed well, fun and had real-world use cases.<br><br>
+                
+                Jenny was also a self-starter. She took what we learned in class and learned more outside of class to enhance her knowledge. The bootcamp is very difficult but Jenny was able to succeed, and her strong efforts outside of class were key.
+                
+                I recommend Jenny for any entry-level web development position." <br><b>— Adam Postma, Instructor at University of Denver (via LinkedIn) </b></p>
+            
+            </div> 
+                <div class="modal-content">   <p class="z-depth-5 recommendationText">"Jenny is a highly professional individual who can juggle a variety of priorities and manage others well. In her writing, she is detail-oriented and can articulate data and research while at the same time, conceptualizing strategy and big picture news into relatable and useful information for a specific audience. She is an well-rounded and talented writer whose style is fluid, clear and interesting." <br><b>— Danielle Encinas, MarCom Manager at Financial Finesse (via LinkedIn) </b></p>
+            </div>
+            <div class="modal-content">   <p class="z-depth-5 recommendationText">"I have worked with Jenny as a contributor to Benefits Selling Magazine and BenefitsPro.com. She has been a skilled editor who is supportive of writers and always quick to provide great story ideas." <br><b>— Martin Trussell, CFC, Executive Director at ECFC (via LinkedIn) </b></p>
+            </div>
+            <div class="modal-content">   <p class="z-depth-5 recommendationText">"Jenny is a talented writer and editor who works hard and takes great pride in everything she does. Her writing style is engaging, and she has a keen eye for detail. I highly recommend Jenny." <br><b>— Amanda McGrory-Dixon, Digital Marketing Content Specialist at Enviance (via LinkedIn) </b></p><br>
+            </div>
+        
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+      </div>
           
 <script>
     $(document).ready(function(){
-    $('.parallax').parallax();
+        $('.parallax').parallax();
+                    $('.sidenav').sidenav();
+                    $('.modal').modal();
+                    $('.sidenav').sidenav();
 });
 
 </script>

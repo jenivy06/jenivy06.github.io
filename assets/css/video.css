@@ -3,6 +3,15 @@
 	color:#37474f;
 	
 }
+#navbarLink { color: #C6D4DF; }
+
+#samplesLink { color: #607d8b; }
+
+.navbarText {
+	color: #C6D4DF;
+	background-color: #607d8b;
+	
+}
 
 .videotitle {
 	padding-top: 35px;
@@ -107,3 +116,11 @@ a:link {
       align-items: center;
       margin-left: 175px;
   }
+
+  .contactme {
+	background-color: #607d8b;
+	height: 475px;
+	
+}
+
+#modalClose { color: #607d8b; }
