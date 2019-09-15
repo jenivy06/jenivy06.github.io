@@ -31,7 +31,9 @@ main {
 
 .nametitle {
 	padding-top: 65px;
-	color: #eceff1
+	color: #eceff1;
+	font-size: 72px;
+	
 }
 
 .titleText {
@@ -200,6 +202,7 @@ main {
 .parallax-container {
 	height: 555px;
 	display: flex;
+	width: 100%
 }
 
 #work {
@@ -223,6 +226,11 @@ main {
 	background-color: #eceff1;
 	font-family: 'Source Serif Pro', serif;
 }
+
+.webdevprojects {
+	
+	font-family: 'Pontano Sans', sans-serif;
+	}
 
 #cardtitlebar {
 	color: #37474f;
@@ -388,7 +396,6 @@ a:link {
 	font-size: 2px;
 	font-style: italic
  }
-
  *{
 	margin: 0;
 	padding: 0;
@@ -396,7 +403,7 @@ a:link {
 			box-sizing: border-box;
   }
   
-  h1.flippingCards{
+  h1{
 	font-size: 2.5rem;
 	font-family: 'Montserrat';
 	font-weight: normal;
@@ -406,35 +413,37 @@ a:link {
   }
   
   .wrapper{
-	width: 90%;
+	width: 150%;
 	margin: 0 auto;
 	max-width: 80rem;
   }
   
-  .cols{
+  .boxes{
 	display: -webkit-box;
 	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-wrap: wrap;
+	/*display: flex;*/
+	/*-ms-flex-wrap: wrap;*/
 		flex-wrap: wrap;
 	-webkit-box-pack: center;
 		-ms-flex-pack: center;
 			justify-content: center;
-	width: 100%
-	
+	width: 125%;
+	margin-left: -360px;
   }
   
- .cardsrow {
-	 width: 175%;
-	 margin-left: -230px
-
- }
   .box{
+	width: calc(85% - 2rem);
+	/*margin: 1rem;*/
+	cursor: pointer;
+	margin-right: -50px
+  }
+  
+  .boxcontainer{
 	-webkit-transform-style: preserve-3d;
 			transform-style: preserve-3d;
 	  -webkit-perspective: 1000px;
 			  perspective: 1000px;
-	
+	margin-right: 100px;
   }
   
   .front,
@@ -453,14 +462,14 @@ a:link {
 	  height: auto;
 	  border-radius: 10px;
 	  color: #fff;
-	font-size: 1.5rem;
+	  font-size: 1.5rem;
   }
   
   .back{
-	background: #9aaca1;
-	background: -webkit-linear-gradient(45deg,  #9aaca1 0%,#596a72 100%);
-	background: -o-linear-gradient(45deg,  #9aaca1 0%,#596a72 100%);
-	background: linear-gradient(45deg,  #9aaca1 0%,#596a72 100%);
+	background: #cedce7;
+	background: -webkit-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
+	background: -o-linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
+	background: linear-gradient(45deg,  #cedce7 0%,#596a72 100%);
   }
   
   .front:after{
@@ -478,8 +487,8 @@ a:link {
 			  backface-visibility: hidden;
 	  border-radius: 10px;
   }
-  .box:hover .front,
-  .box:hover .back{
+  .boxcontainer:hover .front,
+  .boxcontainer:hover .back{
 	  -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
 	  transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
 	  -o-transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
@@ -508,31 +517,30 @@ a:link {
 	  -webkit-perspective: inherit;
 			  perspective: inherit;
 	  z-index: 2;
-	  
   }
   
-  .box .back{
+  .boxcontainer .back{
 	  -webkit-transform: rotateY(180deg);
 			  transform: rotateY(180deg);
 	  -webkit-transform-style: preserve-3d;
 			  transform-style: preserve-3d;
   }
   
-  .box .front{
+  .boxcontainer .front{
 	  -webkit-transform: rotateY(0deg);
 			  transform: rotateY(0deg);
 	  -webkit-transform-style: preserve-3d;
 			  transform-style: preserve-3d;
   }
   
-  .box:hover .back{
+  .boxcontainer:hover .back{
 	-webkit-transform: rotateY(0deg);
 			transform: rotateY(0deg);
 	-webkit-transform-style: preserve-3d;
 			transform-style: preserve-3d;
   }
   
-  .box:hover .front{
+  .boxcontainer:hover .front{
 	-webkit-transform: rotateY(-180deg);
 			transform: rotateY(-180deg);
 	-webkit-transform-style: preserve-3d;
@@ -563,11 +571,10 @@ a:link {
 	font-family: 'Montserrat';
 	font-weight: 300;
   }
-
+  
   @media screen and (max-width: 64rem){
 	.col{
-	  width: calc(100% - 2rem);
-	  display: inline;
+	  width: calc(33.333333% - 2rem);
 	}
   }
   
