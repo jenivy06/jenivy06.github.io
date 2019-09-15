@@ -4,11 +4,19 @@
 	
 }
 
+.videotitle {
+	padding-top: 35px;
+    color:#eceff1;
+}
+
 .bodycopy {
-		color:#37474f;
-		font-size: 20px;
-		font-family: 'PT Sans Narrow', sans-serif;
-	}
+    color:#eceff1;
+    font-size: 20px;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+	
+
+
 
 .parallax{
 	opacity: 0.9;
@@ -92,3 +100,10 @@ a:link {
 	color: black;
   }
   
+ .videosection {
+      background-color: #9aaca1;
+      width: 600px;
+      height: 650px;
+      align-items: center;
+      margin-left: 175px;
+  }
