@@ -270,8 +270,13 @@ main {
 
 .aboutmetext {
 	color: #eceff1;
+	text-align: center
 }
 
+.aboutmeList {
+	color: #eceff1;
+	text-align: left
+}
 
 .writingCard {
 	color: #37474f;
