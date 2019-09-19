@@ -2,6 +2,10 @@ a {
 	color: black;
 }
 
+#mobilenavbarText {
+	color: #607d8b
+}
+
 a:link{
 	color: black;
 }
