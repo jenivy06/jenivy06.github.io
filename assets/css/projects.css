@@ -6,6 +6,12 @@ a {
 	color: #607d8b
 }
 
+.navbarText {
+	color: #C6D4DF;
+	background-color: #607d8b;
+	
+}
+
 a:link{
 	color: black;
 }
