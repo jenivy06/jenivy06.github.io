@@ -1,3 +1,12 @@
+body {
+	display: flex;
+	min-height: 100vh;
+    flex-direction: column;
+    background-image: url("../images/bluegreyconcrete.jpg");
+    background-size: 100%;
+    
+}
+
 a {
 	color: black;
 }
@@ -15,12 +24,7 @@ a {
 a:link{
 	color: black;
 }
-body {
-	display: flex;
-	min-height: 100vh;
-    flex-direction: column;
-    background-image: url("https://cdn.pixabay.com/photo/2015/09/13/20/30/wood-938698_960_720.jpg");
-}
+
 main {
 	flex: 1 0 auto;
 }
@@ -31,7 +35,7 @@ main {
 }
 
 .nametitle {
-	color: white;
+	color: #37474f;
 }
 
 .header {
@@ -176,9 +180,7 @@ main {
 	left:11px;
 }
 
-.parallax-container{
-    height: 300px;
-}
+
 
 #work {
 	background-color: #37474f;
@@ -257,10 +259,7 @@ main {
 	color: #9aaca1;
 }
 
-.parallax-container {
-    display: flex;
-    height: 999px;
-}
+
 
 * {
     box-sizing: border-box;
