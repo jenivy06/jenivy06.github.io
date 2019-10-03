@@ -224,9 +224,9 @@ main {
 	color: #eceff1;
 }
 
-.viewallprojectsBTN {
+.resumeBTN {
 	color: black;
-	background-color: #eceff1;
+	background-color: #37474f;
 }
 
 .projectsbtn {
@@ -352,12 +352,13 @@ main {
 /* Underline From Center */
 .hvr-underline-from-center {
 	display: inline-block;
-	vertical-align: middle;
+	vertical-align: top;
 	-webkit-transform: perspective(1px) translateZ(0);
 	transform: perspective(1px) translateZ(0);
 	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 	position: relative;
 	overflow: hidden;
+	cursor: pointer;
   }
   .hvr-underline-from-center:before {
 	content: "";
