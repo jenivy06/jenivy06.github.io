@@ -18,7 +18,7 @@
   <!--NAVBAR-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <a class="navbar-brand" href="#">
-                        <img src="../BootstrapExample/assets/images/Stellar.png" width="330" height="130" class="d-inline-block align-top logo" alt="">
+                        <img src="assets/images/Stellar.png" width="330" height="130" class="d-inline-block align-top logo" alt="">
                                
                       </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -257,6 +257,7 @@
               <p>
                   <div class="city"></div>
                   <div class="temp"></div>
+                  <div class="cloudcover"></div>
                   <div class="wind"></div>
                   <div class="humidity"></div>
                   <p><i>powered by <a href="https://weatherstack.com/">weatherstack</a></i></p>
@@ -279,7 +280,7 @@ $(document).ready(function() {
     function getCityWeather (cityQuery){
 
     // Here we are building the URL we need to query the database
-    var queryURL = "http://api.weatherstack.com/forecast?access_key=15dedf1a4014345a017a3b09bfe1f3a8&query=" +
+    var queryURL = "https://api.weatherstack.com/forecast?access_key=15dedf1a4014345a017a3b09bfe1f3a8&query=" +
       cityQuery 
 
     // Here we run our AJAX call to the OpenWeatherMap API
@@ -302,6 +303,7 @@ $(document).ready(function() {
         // $(".wind").text("Wind Speed: " + response.wind;
         // $(".humidity").text("Humidity: " + response.main.humidity);
         $(".temp").html("<h5>" + "Temperature (C): " + response.current.temperature + "</h5>");
+        $(".cloudcover").html("<h5>" + "Cloudcover (%): " + response.current.cloudcover+ "</h5>");
         $(".wind").html("<h5>" + "Wind speed (mph): " + response.current.wind_speed + "</h5>");
         $(".humidity").html("<h5>" + "Humidity (%): " + response.current.humidity + "</h5>");
 
