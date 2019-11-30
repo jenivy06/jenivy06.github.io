@@ -2,6 +2,12 @@ body {
 	background-color: #607d8b;
 }
 
+.projectscontainer{
+	display: grid;  
+    grid-template-columns: 1fr 1fr 1fr;  
+    grid-template-rows: 50px 50px;
+}
+
 .navbarText {
 	color: #C6D4DF;
 	background-color: #607d8b;
@@ -446,8 +452,8 @@ a:link {
 	-webkit-box-pack: center;
 		-ms-flex-pack: center;
 			justify-content: center;
-	width: 125%;
-	margin-left: -360px;
+	width: 250%;
+	margin-left: -220px;
   }
   
   .box{
