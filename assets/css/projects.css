@@ -2,7 +2,7 @@ body {
 	display: flex;
 	min-height: 100vh;
     flex-direction: column;
-    background-image: url("../images/bluegreyconcrete.jpg");
+    background-image: url("../images/bluestonewall.jpg");
     background-size: 100%;
     
 }
