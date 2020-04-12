@@ -8,8 +8,8 @@ body {
 }
 
 .navbarText {
-	color: #C6D4DF;
-	background-color: #607d8b;
+	color: #eceff1;
+	background-color: #8298a3;
 	
 }
 
@@ -17,7 +17,7 @@ body {
 	color: #607d8b
 }
 
-#navbarLink { color: #C6D4DF; }
+#navbarLink { color: #eceff1; }
 
 #samplesLink { color: #607d8b; }
 
