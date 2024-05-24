@@ -50,7 +50,7 @@
                 <class="row">
                     <div class="herocontainer">
                         <div class="section">
-                                <h1 class="nametitle center">
+                                <h1 class="fade-in nametitle center">
                                         JENNY<b> IVY</b>
                                         <br>
                                         <i class="fa fa-leaf" aria-hidden="true"></i>
@@ -333,6 +333,12 @@ $(document).ready(function(){
      padding: 170,
    });
  });
+
+ $(window).ready(function() {
+        $("h1").delay( 300 )
+        .animate({bottom:'250px'}, 880)
+        $( "div:hidden" ).first().fadeIn( "slow" );
+       });
 
 </script>
 
