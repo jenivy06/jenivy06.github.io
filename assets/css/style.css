@@ -49,6 +49,7 @@
 
 }
 
+
 .navbarText {
 	color: #C6D4DF;
 	background-color: #607d8b;
@@ -58,7 +59,7 @@
 	color: #607d8b
 }
 
-#navbarLink { color: #eceff1; }
+#navbarLink { color: #8a96d0;}
 
 #samplesLink { color: #607d8b; }
 
@@ -477,10 +478,9 @@ and (max-device-width : 667px) {
 }
 
 .skillsection {
-	height: 732px;
+	height: 752px;
 
 }
-
 /* unvisited link */
 a:link {
 	color: darkslategray
