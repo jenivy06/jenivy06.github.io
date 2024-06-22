@@ -5,6 +5,8 @@
     <title>Jenny Ivy | Website & Digital Content Specialist </title>
     <meta charset="UTF-8">
     <meta name="description" content="Jenny Ivy is a web developer, editor, writer and digital media specialist. She is available for website content management.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
    <!--<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> --> 
@@ -15,6 +17,9 @@
     <script src="https://use.fontawesome.com/5052251c2a.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway|Economica|Merriweather|Pontano+Sans|Tajawal&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    
    
    
 
@@ -25,12 +30,12 @@
         <script src="assets/javascript/materialize.js"></script>
         <script src="assets/javascript/materialize.min.js"></script>
       <!--Begin navbar-->
-      <nav class="navbarText">
-        <div class="container">
-            <div class="nav-wrapper">
-          <a href="#" class="fa fa-leaf" aria-hidden="true" style="color:#C6D4DF"></a>
-          <ul id="mobilenavbarText" class="right hide-on-med-and-down">
-            <li><a href="index.html" style="color:#C6D4DF">Home</a></li>
+      <nav>
+        <div class="nav-wrapper" style="background-color: #607d8b;">
+          <a href="#!" class="brand-logo hide-on-med-and-down" style="margin-left: 245px;"><img src="assets/images/Ivylogo-initials3.jpg"></a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger" style="color:#C6D4DF;"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down" style="margin-right: 225px;">
+            <li><a href="#intro" style="color:#C6D4DF">About</a></li>
             <li><a href="projects.html" style="color:#C6D4DF">Web Dev</a></li>
             <li><a href="writingsamples.html" style="color:#C6D4DF">Print</a></li>
             <li><a href="digitalcontent.html" style="color:#C6D4DF">Digital</a></li>
@@ -39,8 +44,9 @@
             <li><a href="#recommendations" style="color:#C6D4DF">Recommendations</a></li>
           </ul>
         </div>
-        </div>
       </nav>
+    
+    
        <!--End navbar-->
                 <class="row">
                     <div class="herocontainer">
@@ -297,16 +303,16 @@
     </div>
 
       <!-- MOBILE NAV -->
-<ul class="sidenav" id="mobile-nav">
-    <li><a id="mobilenavbarText" href="index.html">Home</a></li>
-    <li><a id="mobilenavbarText" href="index.html#intro" target="_blank">About Me</a></li>
-    <li><a id="mobilenavbarText" href="projects.html">Web Dev</a></li>
-    <li><a id="mobilenavbarText" href="writingsamples.html">Print</a></li>
-    <li><a id="mobilenavbarText" href="digitalcontent.html">Digital</a></li>
-    <li><a id="mobilenavbarText" href="video.html">Video</a></li>
-    <li><a id="mobilenavbarText" href="#contact">Contact & Resume</a></li>
-    <li><a id="mobilenavbarText" href="#recommendations">Recommendations</a></li>
-    </ul>
+      <ul class="sidenav" id="mobile-demo">
+        <li><a id="mobilenavbarText" href="index.html">Home</a></li>
+        <li><a id="mobilenavbarText" href="index.html#intro" target="_blank">About</a></li>
+        <li><a id="mobilenavbarText" href="projects.html">Web Dev</a></li>
+        <li><a id="mobilenavbarText" href="writingsamples.html">Print</a></li>
+        <li><a id="mobilenavbarText" href="digitalcontent.html">Digital</a></li>
+        <li><a id="mobilenavbarText" href="video.html">Video</a></li>
+        <li><a id="mobilenavbarText" href="#contact">Contact & Resume</a></li>
+        <li><a id="mobilenavbarText" href="#recommendations">Recommendations</a></li>
+      </ul>
                 </body>
                 </html>
 
@@ -314,8 +320,11 @@
 <script>
 
 $(document).ready(function(){
+ 		$('.sidenav').sidenav();
+ 	});
+
+$(document).ready(function(){
     $('.parallax').parallax();
-    $('.sidenav').sidenav();
     $('.modal').modal();
     
    
@@ -334,6 +343,10 @@ $(document).ready(function(){
         .animate({bottom:'250px'}, 800)
         $( "div:hidden" ).first().fadeIn( "slow" );
        });
+
+       $(document).ready(function () {
+        $(".button-collapse").sideNav();
+      });
 
 </script>
 
