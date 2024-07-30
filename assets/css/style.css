@@ -56,11 +56,12 @@
 }
 
 #mobilenavbarText {
-	color: #607d8b
+	color: #C6D4DF
 }
 
 #navbarLink { color: #8a96d0;}
 
+/*
 .sidenav {
 	height: 100%;
 	width: 0;
@@ -73,6 +74,7 @@
 	transition: 0.5s;
 	padding-top: 60px;
   }
+ 
   
   .sidenav a {
 	padding: 8px 8px 8px 32px;
@@ -93,6 +95,13 @@
 	right: 25px;
 	font-size: 36px;
 	margin-left: 50px;
+  }
+
+  */
+  .sidenav li>a {padding:0 32px !important}
+  .collapsible-body>ul>li>a {
+	padding: 0 48px !important;
+	font-weight: 400 !important;
   }
 
 #samplesLink { color: #607d8b; }
@@ -313,7 +322,7 @@ margin-bottom: -25px;
 	position:static;
   }
 
-
+ /* parallax original 
 .parallax-container {
 	padding-top: 20px;
 	height: 670px;
@@ -322,6 +331,15 @@ margin-bottom: -25px;
 	padding-bottom: 55px;
 
 }
+	*/
+
+.parallax-container {
+	position: relative;
+	overflow:hidden;
+	height: 699px;
+	padding-top: 35px;
+}
+
 
 /*ipad mini, air, pro*/
 @media only screen 
@@ -517,7 +535,7 @@ and (max-device-width : 667px) {
 }
 
 .skillsection {
-	height: 752px;
+	height: 753px;
 
 }
 /* unvisited link */
@@ -802,6 +820,8 @@ a:link {
   padding: 0px;
  
   }
+
+  
 
 
 
