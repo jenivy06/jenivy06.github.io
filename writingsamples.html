@@ -13,6 +13,7 @@
     <script src="https://use.fontawesome.com/5052251c2a.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Hind:600|Libre+Baskerville:700|Lusitana:700|PT+Sans+Narrow:700|Source+Serif+Pro:600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
    
    
 
@@ -28,7 +29,7 @@
           <a href="#" data-target="mobile-demo" class="sidenav-trigger" style="color:#C6D4DF;"><i class="material-icons">menu</i></a>
           <ul class="right hide-on-med-and-down" style="margin-right: 225px;">
             <li><a href="index.html#intro" style="color:#C6D4DF">About</a></li>
-            <li><a href="projects.html" style="color:#C6D4DF">Web Dev</a></li>
+            <li><a href="projects.html" style="color:#C6D4DF">Web Development</a></li>
             <li><a href="writingsamples.html" style="color:#C6D4DF">Print</a></li>
             <li><a href="digitalcontent.html" style="color:#C6D4DF">Digital</a></li>
             <li><a href="video.html" style="color:#C6D4DF">Video</a></li>
@@ -36,6 +37,17 @@
             <li><a href="#recommendations" style="color:#C6D4DF">Recommendations</a></li>
           </ul>
         </div>
+        <!--Mobile side-->
+        <ul class="sidenav" id="mobile-demo" style="background-color: #607d8b;">
+          <li><a id="mobilenavbarText" href="index.html" target="_blank">Home</a></li>
+          <li><a id="mobilenavbarText" href="index.html#intro" target="_blank">About</a></li>
+          <li><a id="mobilenavbarText" href="projects.html" target="_blank">Web Development</a></li>
+          <li><a id="mobilenavbarText" href="writingsamples.html" target="_blank">Print</a></li>
+          <li><a id="mobilenavbarText" href="digitalcontent.html" target="_blank">Digital</a></li>
+          <li><a id="mobilenavbarText" href="video.html" target="_blank">Video</a></li>
+          <li><a id="mobilenavbarText" href="#contact">Contact & Resume</a></li>
+          <li><a id="mobilenavbarText" href="#recommendations">Recommendations</a></li>
+        </ul>
       </nav>
     
     
@@ -326,7 +338,7 @@
       </div>
     </div>
 
-    <!-- MOBILE NAV -->
+    <!-- MOBILE NAV 
     <ul class="sidenav" id="mobile-demo">
       <li><a id="mobilenavbarText" href="index.html">Home</a></li>
       <li><a id="mobilenavbarText" href="index.html#intro" target="_blank">About</a></li>
@@ -336,24 +348,32 @@
       <li><a id="mobilenavbarText" href="video.html">Video</a></li>
       <li><a id="mobilenavbarText" href="#contact">Contact & Resume</a></li>
       <li><a id="mobilenavbarText" href="#recommendations">Recommendations</a></li>
-    </ul>
+    </ul> -->
                 </body>
                 </html>
 
             <script>
-              var elem = document.querySelector('.sidenav');
-var instance = M.Sidenav.init(elem, {
-    onOpenStart: function () {
-        console.log("I trigger as soon as the page is loaded");
-    },
-    onCloseEnd: function () {
-        console.log("same");
-    }
+$(document).ready(function(){
+    $('.sidenav').sidenav();
+    $('.parallax').parallax();
+    $('.modal').modal();
+    $('.collapsible').collapsible();
+    $(".dropdown-trigger").dropdown({ hover: true });
+    
+   
 });
-                    $(document).ready(function(){
-                    $('.parallax').parallax();
-                    $('.sidenav').sidenav();
-                    $('.modal').modal();
-                    $('.sidenav').sidenav();
-                });
+    
+    document.addEventListener('DOMContentLoaded', function() {
+   var elems = document.querySelectorAll('.carousel');
+   var instances = M.Carousel.init(elems, {
+     indicators: true,
+     padding: 170,
+   });
+ });
+
+ $(window).ready(function() {
+        $("h1").delay( 300 )
+        .animate({bottom:'250px'}, 800)
+        $( "div:hidden" ).first().fadeIn( "slow" );
+       });
                 </script>

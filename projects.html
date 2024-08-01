@@ -11,6 +11,7 @@
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/projects.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     
 </head>
 <body>
@@ -32,6 +33,17 @@
             <li><a href="#recommendations" style="color:#C6D4DF">Recommendations</a></li>
           </ul>
         </div>
+         <!--Mobile side-->
+         <ul class="sidenav" id="mobile-demo" style="background-color: #607d8b;">
+            <li><a id="mobilenavbarText" href="index.html" target="_blank">Home</a></li>
+            <li><a id="mobilenavbarText" href="index.html#intro" target="_blank">About</a></li>
+            <li><a id="mobilenavbarText" href="projects.html" target="_blank">Web Development</a></li>
+            <li><a id="mobilenavbarText" href="writingsamples.html" target="_blank">Print</a></li>
+            <li><a id="mobilenavbarText" href="digitalcontent.html" target="_blank">Digital</a></li>
+            <li><a id="mobilenavbarText" href="video.html" target="_blank">Video</a></li>
+            <li><a id="mobilenavbarText" href="#contact">Contact & Resume</a></li>
+            <li><a id="mobilenavbarText" href="#recommendations">Recommendations</a></li>
+          </ul>
       </nav>
     
     
@@ -545,7 +557,7 @@
       </div>
 
 
-       <!-- MOBILE NAV -->
+       <!-- MOBILE NAV 
        <ul class="sidenav" id="mobile-demo">
         <li><a id="mobilenavbarText" href="index.html">Home</a></li>
         <li><a id="mobilenavbarText" href="index.html#intro" target="_blank">About</a></li>
@@ -555,17 +567,32 @@
         <li><a id="mobilenavbarText" href="video.html">Video</a></li>
         <li><a id="mobilenavbarText" href="#contact">Contact & Resume</a></li>
         <li><a id="mobilenavbarText" href="#recommendations">Recommendations</a></li>
-      </ul>
+      </ul> -->
     </body>
     </html>
 <script>
-    $(document).ready(function(){
-        $('.parallax').parallax();
-                    $('.sidenav').sidenav();
-                    $('.modal').modal();
-                    $('.sidenav').sidenav();
+$(document).ready(function(){
+    $('.sidenav').sidenav();
+    $('.parallax').parallax();
+    $('.modal').modal();
+    $('.collapsible').collapsible();
+    $(".dropdown-trigger").dropdown({ hover: true });
+    
+   
 });
+    document.addEventListener('DOMContentLoaded', function() {
+   var elems = document.querySelectorAll('.carousel');
+   var instances = M.Carousel.init(elems, {
+     indicators: true,
+     padding: 170,
+   });
+ });
 
+ $(window).ready(function() {
+        $("h1").delay( 300 )
+        .animate({bottom:'250px'}, 800)
+        $( "div:hidden" ).first().fadeIn( "slow" );
+       });
 </script>
 
 

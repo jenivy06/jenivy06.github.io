@@ -12,7 +12,7 @@ a {
 }
 
 #mobilenavbarText {
-	color: #607d8b
+	color: #C6D4DF
 }
 
 
@@ -407,7 +407,6 @@ main {
 .navbarText {
 	color: #C6D4DF;
 	background-color: #607d8b;
-	
 }
 
 /* Underline From Center */
@@ -599,3 +598,15 @@ main {
     font-family: 'Montserrat';
     font-weight: 300;
   }
+
+  .sidenav li>a {padding:0 32px !important}
+  .collapsible-body>ul>li>a {
+	padding: 0 48px !important;
+	font-weight: 400 !important;
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+    }
+  
