@@ -336,30 +336,64 @@ margin-bottom: -25px;
 .parallax-container {
 	position: relative;
 	overflow:hidden;
-	height: 699px;
+	height: 125vh;
 	padding-top: 35px;
+	width: 100%;
 }
 
+/*
+@media only screen and (max-width: 780px) {
+	.parallax-container {
+	  height: 215vh;
+	}
+  }
+	*/
+  
+  /* On screens that are 780px or less */
+  @media screen and (max-width: 812px) {
+	.parallax-container {
+	  height: 305vh;
+	}
+  }
 
-/*ipad mini, air, pro*/
+  @media screen and (min-width: 813px) and (max-width: 1024px) {
+	.parallax-container {
+		height: 87vh;
+	}
+  }s
+
+  /*ipad mini, air, pro
+
+  @media screen and (min-width: 1025px) and (max-width: 1180px) {
+	.parallax-container {
+		height: 50vh;
+	}
+  }
+  
+*/
+
+
+/*ipad mini, air, pro
 @media only screen 
-and (min-device-width : 768px) 
+and (min-device-width : 375px) 
 and (max-device-width : 1024px) {
   .parallax-container {
-    width: 100%;
 	display: flex;
-    height: 795px;
+    height: 2000vh;
   }
 }
 
-/*iphone SE*/
+
+/*iphone SE
 @media only screen 
 and (min-device-width : 375px) 
-and (max-device-width : 667px) {
+and (max-device-width : 768px) {
   .parallax-container {
-    width: 100%;
+	position: static;
+	padding-top: 40px;
+	padding-bottom: 75px;
 	display: flex;
-    height: 1270px;
+    height: 700vh;
   }
 }
 
@@ -545,7 +579,7 @@ and (max-device-width : 667px) {
 }
 
 .skillsection {
-	height: 753px;
+	height: 775px;
 
 }
 /* unvisited link */
